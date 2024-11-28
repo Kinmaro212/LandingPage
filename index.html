@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/2ab272435c.js" crossorigin="anonymous"></script>
-    <title>Landing Page</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS pour styliser le contenu de la page. -->
+    <script src="https://kit.fontawesome.com/2ab272435c.js" crossorigin="anonymous"></script> <!-- Charge les icônes de FontAwesome pour une utilisation dans la page. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="script.js">
+
+    <title>Landing Page</title> 
 </head>
 <body>
     <!--=======================================Header====================================-->
@@ -16,7 +20,7 @@
                 <h2>KUCRA</h2> <!-- Nom de l'entreprise titulaire du site web -->
                 <nav>
                     <ul>
-                        <li> <!-- Barre menu personalisé -->
+                        <li> <!-- Barre menu personnalisée pour la navigation entre différentes sections ou pages du site. -->
                             <a href="#">HOME</a>
                             <a href="#">FEATURES</a>
                             <a href="#">CLIENT</a>
@@ -28,15 +32,10 @@
                         </li>
                     </ul>
                 </nav>
-                <nav>
-                    <ul>
-                        <li> <!-- Barre menu réseaux sociaux -->
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </nav>
+                 <!-- Barre réseaux sociaux pour rediriger les utilisateurs vers les plateformes sociales de l'entreprise. -->
+                            <span><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
+                            <span><a href="#"><i class="fa-brands fa-twitter"></i></a></span>
+                            <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
             </div>
         </section>
     </header>
@@ -44,34 +43,34 @@
     <!--=======================================Main====================================-->
     <main>
         <article>
-            <h1>We are StartUp Creative Kucra Agency</h1> <!-- titre personalisé -->
+            <h1>We are StartUp Creative Kucra Agency</h1>
             <p class="presentation">Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
             <label class="emailContact" for="email"></label>
             <input type="email" id="email" name="email" placeholder="Enter your email">
             <button type="submit">Subscribe</button>
-            <!-- Ici on place un input afin qu'on puisse entrer ses coordonnées ici tel que l'email et un bouton subscribe que l'on introduira dans le champ à l'aide du CSS -->
         </article>
+    
+        <!-- Conteneur d'image -->
         <div class="img">
-            <img src="img/illustration.svg" alt="Chat">
+            <img src="img/illustration.svg" alt="Chat"> <!-- Image centrée -->
         </div>
     </main>
-
     <!--=======================================Seconde partie de la section 1====================================-->
     <h3>Product Features</h3>
-    <p class="txtProductFeatures">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+    <p class="txtProductFeatures">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p> <!-- Texte explicatif pour introduire les fonctionnalités du produit. -->
     <section class="secondPart">
-        <figure>
-            <i class="fa-sharp fa-solid fa-brush"></i>
-            <h4>Digital Design</h4>
-            <p class="figsecondcontainer">Some quick example text to build on the card title and make up the bulk of the card the platform.</p>
+        <figure class="figProductFeatures">
+            <i class="fa-sharp fa-solid fa-brush"></i> <!-- Icône pour représenter visuellement le design digital. -->
+            <h4>Digital Design</h4> <!-- Titre de la fonctionnalité. -->
+            <p class="figsecondcontainer">Some quick example text to build on the card title and make up the bulk of the card the platform.</p> <!-- Texte descriptif expliquant la fonctionnalité. -->
         </figure>
-        <figure>
-            <i class="fa-light fa-globe"></i>
+        <figure class="figProductFeatures">
+            <i class="fa-light fa-globe"></i> <!-- Icône pour représenter les couleurs illimitées. -->
             <h4>Unlimited Colors</h4>
             <p class="figsecondcontainer">Credibility brand standards compliant user extensible services College anibh ocean euismod tincidunt laoreet.</p>
         </figure>
-        <figure>
-            <i class="fa-sharp fa-solid fa-chess"></i>
+        <figure class="figProductFeatures">
+            <i class="fa-sharp fa-solid fa-chess"></i> <!-- Icône pour représenter les solutions stratégiques. -->
             <h4>Strategy Solutions</h4>
             <p class="figsecondcontainer">Separated they live in bookmarks grove right at the coast of the Semantics, a large ocean regelialia.</p>
         </figure>
@@ -80,56 +79,60 @@
     <!--=======================================Section équipe====================================-->
     <section class="equipe">
         <article class="team">
-            <h3>We are a dynamic team of talented people of innovative & marketing expert</h3>
+            <h3>We are a dynamic team of talented people of innovative & marketing expert</h3> 
             <p class="Pteam">To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages of the resulting language.</p>
+            <div class="laTeam">
             <figure class="fteam">
-                <h4>1499+</h4>
-                <p class="Pteam">Complete projects</p>
-                <img src="img/person1.png" alt="">
-                <h4>Anna G. Wihite</h4>
-                <p class="Pteam">CEO/Founder</p>
+                <h4>1499+</h4> <!-- Statistique mise en avant pour impressionner les visiteurs. -->
+                <p class="Pteam">Complete projects</p> <!-- Description de la statistique. -->
+                <img src="img/person1.png" alt="" width="300" height="300">
+                <h4>Anna G. Wihite</h4> <!-- Nom du membre de l'équipe. -->
+                <p class="Pteam">CEO/Founder</p> <!-- Fonction du membre. -->
             </figure>
             <figure class="fteam">
                 <h4>1080k</h4>
                 <p class="Pteam">Satisfied Clients</p>
-                <img src="img/person2.png" alt="">
+                <img src="img/person2.png" alt="" width="300" height="300">
                 <h3>Willian S. Blay</h3>
                 <p class="Pteam">CTO/Co-Founder</p>
             </figure>
             <figure class="fteam">
                 <h4>608</h4>
                 <p class="Pteam">Team Members</p>
-                <img src="img/person3.png" alt="">
+                <img src="img/person3.png" alt="" width="300" height="300">
                 <h3>Maria B. Morales</h3>
                 <p class="Pteam">Web Designer</p>
             </figure>
             <figure class="fteam">
                 <h4>252</h4>
                 <p class="Pteam">Employee</p>
-                <img src="img/person4.png" alt="">
+                <img src="img/person4.png" alt="" width="300" height="300">
                 <h3>Luke L. Johnston</h3>
                 <p class="Pteam">Web Developer</p>
             </figure>
+        </div>
         </article>
     </section>
+    
 
     <!--=======================================Section parallax====================================-->
     <section class="parallax">
-        <h3>Let's get started with Kucra</h3>
+        <div class="imgParallax"><img src="img/parallax.png" alt=""></div>
+        <h3>Let's get started with Kucra</h3> <!-- Appel à l'action pour inciter les visiteurs à agir. -->
         <p class="txtParallax">They are a good way to get you started if you want to build something similar or use from existing apps which will reduce the cost, efforts and time of the developers.</p>
-        <button>Get Started</button>
+        <button>Get Started</button> <!-- Bouton pour engager l'utilisateur à débuter avec l'agence. -->
     </section>
 
     <!--=======================================Section blog====================================-->
     <section class="blog">
         <div>
             <figure>
-                <img src="img/blog3.png" alt="">
+                <img src="img/blog3.png" alt="" width="300"> <!-- Taille uniformisée à environ 300px de largeur -->
             </figure>
             <article>
-                <h3>Doing a cross-country road trip</h3>
-                <p class="txtblog">We craft digital, graphic and dimensional thinking, to create category-leading brand.</p>
-                <span>Read more</span>
+                <h3>Doing a cross-country road trip</h3> <!-- Titre de l'article de blog. -->
+                <p class="txtblog">We craft digital, graphic and dimensional thinking, to create category-leading brand.</p> <!-- Résumé de l'article pour attirer l'intérêt. -->
+                <span>Read more</span> <!-- Lien pour inciter l'utilisateur à lire l'article complet. -->
             </article>
             <div class="date">
                 <i class="fa-regular fa-user"></i>
@@ -140,7 +143,7 @@
         </div>
         <div class="blog2">
             <figure>
-                <img src="img/blog2.png" alt="">
+                <img src="img/blog2.png" alt="" width="300"> <!-- Taille uniformisée à environ 300px de largeur -->
             </figure>
             <article>
                 <h3>New exhibition at our Museum</h3>
@@ -156,7 +159,7 @@
         </div>
         <div class="blog3">
             <figure>
-                <img src="img/blog1.png" alt="">
+                <img src="img/blog1.png" alt="" width="300"> <!-- Taille uniformisée à environ 300px de largeur -->
             </figure>
             <article>
                 <h3>Design your apps in your own way</h3>
@@ -171,91 +174,86 @@
             </div>
         </div>
     </section>
+    
 
     <!--=======================================Section Pricing====================================-->
-<section class="part2">
-    <h3>Our Pricing</h3>
-    <p class="txtPrincing">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
-
-    <!-- Starter Plan -->
-    <div class="starter">
-        <h4>Starter</h4>
-        <span>$9</span><span>/month</span>
-        <div class="liStarter">
-            <dl>
-                <dt>Brandwidth</dt>
-                <dt>Onlinespace</dt>
-                <dt>Support</dt>
-                <dt>Domain</dt>
-                <dt>Hidden Fees</dt>
-            </dl>
-            <dl>
-                <dt>1GB</dt>
-                <dt>500MB</dt>
-                <dt>No</dt>
-                <dt>1</dt>
-                <dt>No</dt>
-            </dl>
+    <section class="part2">
+        <h3>Our Pricing</h3>
+        <p class="txtPrincing">It is a long established fact that a reader will be distracted by the layout of a page.</p>
+    
+        <!-- Starter Plan -->
+        <div class="starter">
+            <h4>Starter</h4>
+            <span>$9</span><span>/month</span>
+            <div class="liStarter">
+                <dl>
+                    <dt>Brandwidth</dt>
+                    <dd>1GB</dd>
+                    <dt>Onlinespace</dt>
+                    <dd>500MB</dd>
+                    <dt>Support</dt>
+                    <dd>No</dd>
+                    <dt>Domain</dt>
+                    <dd>1</dd>
+                    <dt>Hidden Fees</dt>
+                    <dd>No</dd>
+                </dl>
+            </div>
         </div>
-    </div>
-
-    <!-- Advanced Plan -->
-    <div class="advanced">
-        <h4>Advanced</h4>
-        <span>$19</span><span>/month</span>
-        <div class="liAdvanced">
-            <dl>
-                <dt>Brandwidth</dt>
-                <dt>Onlinespace</dt>
-                <dt>Support</dt>
-                <dt>Domain</dt>
-                <dt>Hidden Fees</dt>
-            </dl>
-            <dl>
-                <dd>2GB</dd>
-                <dd>1GB</dd>
-                <dd>Yes</dd>
-                <dd>3</dd>
-                <dd>No</dd>
-            </dl>
+    
+        <!-- Advanced Plan -->
+        <div class="advanced">
+            <h4>Advanced</h4>
+            <span>$19</span><span>/month</span>
+            <div class="liAdvanced">
+                <dl>
+                    <dt>Brandwidth</dt>
+                    <dd>2GB</dd>
+                    <dt>Onlinespace</dt>
+                    <dd>1GB</dd>
+                    <dt>Support</dt>
+                    <dd>Yes</dd>
+                    <dt>Domain</dt>
+                    <dd>3</dd>
+                    <dt>Hidden Fees</dt>
+                    <dd>No</dd>
+                </dl>
+            </div>
+            <div class="promo">
+                <span>20% sale</span>
+            </div>
         </div>
-        <div class="promo">
-            <span>20% sale</span>
+    
+        <!-- Professional Plan -->
+        <div class="professional">
+            <h4>Professional</h4>
+            <span>$29</span><span>/month</span>
+            <div class="liProfessional">
+                <dl>
+                    <dt>Brandwidth</dt>
+                    <dd>3GB</dd>
+                    <dt>Onlinespace</dt>
+                    <dd>2GB</dd>
+                    <dt>Support</dt>
+                    <dd>Yes</dd>
+                    <dt>Domain</dt>
+                    <dd>Unlimited</dd>
+                    <dt>Hidden Fees</dt>
+                    <dd>No</dd>
+                </dl>
+            </div>
         </div>
-    </div>
-
-    <!-- Professional Plan -->
-    <div class="professional">
-        <h4>Professional</h4>
-        <span>$29</span><span>/month</span>
-        <div class="liProfessional">
-            <dl>
-                <dt>Brandwidth</dt>
-                <dt>Onlinespace</dt>
-                <dt>Support</dt>
-                <dt>Domain</dt>
-                <dt>Hidden Fees</dt>
-            </dl>
-            <dl>
-                <dd>3GB</dd>
-                <dd>2GB</dd>
-                <dd>Yes</dd>
-                <dd>Unlimited</dd>
-                <dd>No</dd>
-            </dl>
+    </section>
+    
+    <footer>
+        <div class="reseauxSociaux">
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-brands fa-linkedin"></i></span>
+            <span><i class="fa-brands fa-google-plus-g"></i></span>
         </div>
-    </div>
-</section>
-
-<footer>
-    <div class="reseauxSociaux">
-        <span><i class="fa-brands fa-facebook-f"></i></span>
-        <span><i class="fa-brands fa-twitter"></i></span>
-        <span><i class="fa-brands fa-linkedin"></i></span>
-        <span><i class="fa-brands fa-google-plus-g"></i></span>
-    </div>
-    <span>Terms & Condition</span>
-    <span>Privacy Policy</span>
-    <span>Contact Us</span>
-    <p>2022&#xa9; KUCRA - Landing Page Template by Pichforest</p>
-</footer>
+        <span>Terms & Conditions</span>
+        <span>Privacy Policy</span>
+        <span>Contact Us</span>
+        <p>2022&#xa9; KUCRA - Landing Page Template by Pichforest</p>
+    </footer>
