@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS pour styliser le contenu de la page. -->
     <script src="https://kit.fontawesome.com/2ab272435c.js" crossorigin="anonymous"></script> <!-- Charge les icônes de FontAwesome pour une utilisation dans la page. -->
+    <link rel="stylesheet" href="script.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="script.js">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 
     <title>Landing Page</title> 
 </head>
 <body>
     <!--=======================================Header====================================-->
+<div class="backgroundGradiant">
     <header>
         <section class="firstPart">
             <!--firstContainer pour aligner à l'horizontale le nom de l'entreprise, la barre de navigation et la barre de navigation réseaux sociaux-->
@@ -42,19 +44,23 @@
 
     <!--=======================================Main====================================-->
     <main>
-        <article>
-            <h1>We are StartUp Creative Kucra Agency</h1>
-            <p class="presentation">Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
-            <label class="emailContact" for="email"></label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
-            <button type="submit">Subscribe</button>
-        </article>
-    
-        <!-- Conteneur d'image -->
-        <div class="img">
-            <img src="img/illustration.svg" alt="Chat"> <!-- Image centrée -->
+        <div class="imgBigCat">
+            <article class="firstArticle">
+                <h1>We are StartUp Creative Kucra Agency</h1>
+                <p class="presentation">Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
+                <label class="emailContact" for="email"></label>
+                <div class="inputSubmit">
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <input id="subscribe" type="submit" value="Subscribe"></input>
+                </div>
+            </article>
+            <!-- Conteneur d'image -->
+            <div class="imgCat">
+                <img src="img/illustration.svg" alt="Chat"> 
+            </div>
         </div>
     </main>
+</div>
     <!--=======================================Seconde partie de la section 1====================================-->
     <h3>Product Features</h3>
     <p class="txtProductFeatures">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p> <!-- Texte explicatif pour introduire les fonctionnalités du produit. -->
@@ -75,6 +81,7 @@
             <p class="figsecondcontainer">Separated they live in bookmarks grove right at the coast of the Semantics, a large ocean regelialia.</p>
         </figure>
     </section>
+
 
     <!--=======================================Section équipe====================================-->
     <section class="equipe">
@@ -117,7 +124,6 @@
 
     <!--=======================================Section parallax====================================-->
     <section class="parallax">
-        <div class="imgParallax"><img src="img/parallax.png" alt=""></div>
         <h3>Let's get started with Kucra</h3> <!-- Appel à l'action pour inciter les visiteurs à agir. -->
         <p class="txtParallax">They are a good way to get you started if you want to build something similar or use from existing apps which will reduce the cost, efforts and time of the developers.</p>
         <button>Get Started</button> <!-- Bouton pour engager l'utilisateur à débuter avec l'agence. -->
