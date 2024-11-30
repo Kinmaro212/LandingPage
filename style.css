@@ -1,6 +1,5 @@
 /* ---------------------- RESET ---------------------- */
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -260,8 +259,18 @@ article.team {
     width: 200px;
     height: 200px;
     object-fit: cover;
+    margin: 1em;
 }
 
+.allTeam{
+    display: flex;
+    margin: 2em;
+}
+
+article.team{
+    width: 100%;
+    text-align: center;
+}
 /* ---------------------- MAIN ---------------------- */
 main {
     height: 50vh;
