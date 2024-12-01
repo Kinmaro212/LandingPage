@@ -54,7 +54,7 @@
                     <input id="subscribe" type="submit" value="Subscribe"></input>
                 </div>
             </article>
-            <!-- Conteneur d'image -->
+            <!-- Div qui contient l'image afin de la manipuler dans le CSS -->
             <div class="imgCat">
                 <img src="img/illustration.svg" alt="Chat"> 
             </div>
@@ -127,66 +127,58 @@
 </section>
     <!--=======================================Section parallax====================================-->
     <section class="parallax">
+        <div class="backgroundParallax"></div> <!-- Division pour l'image de fond -->
         <article class="artParallax">
-            <h3>Let's get started with Kucra</h3>
-                <p class="txtParallax">They are a good way to get you started if you want to build something similar or use from existing apps which will reduce the cost, efforts and time of the developers.</p>
-            <button>Get Started</button><!-- Bouton pour engager l'utilisateur à débuter avec l'agence. -->
-        </article> 
-    </section>
-
+          <h3>Let's get started with Kucra</h3>
+          <p class="txtParallax">
+            They are a good way to get you started if you want to build something similar or use from existing apps which will reduce the cost, efforts and time of the developers.
+          </p>
+          <button>Get Started</button>
+        </article>
+      </section>
     <!--=======================================Section blog====================================-->
     <section class="blog">
-        <div>
+        <div class="divBlog">
             <figure>
-                <img src="img/blog3.png" alt="" width="300"> <!-- Taille uniformisée à environ 300px de largeur -->
+                <img src="img/blog3.png" alt="Road Trip" width="300">
+                <div class="author-date">
+                    <h4>Calvin Carlo</h4>
+                    <p>20th March 2021</p>
+                </div>
             </figure>
-            <article>
-                <h3>Doing a cross-country road trip</h3> <!-- Titre de l'article de blog. -->
-                <p class="txtblog">We craft digital, graphic and dimensional thinking, to create category-leading brand.</p> <!-- Résumé de l'article pour attirer l'intérêt. -->
-                <span>Read more</span> <!-- Lien pour inciter l'utilisateur à lire l'article complet. -->
+            <article class="artBlog">
+                <h3>Doing a cross-country road trip</h3>
+                <p class="txtblog">We craft digital, graphic and dimensional thinking, to create category-leading brand.</p>
             </article>
-            <div class="date">
-                <i class="fa-regular fa-user"></i>
-                <h4>Calvin Carlo</h4>
-                <i class="fa-regular fa-clock"></i>
-                <p>20th March 2021</p>
-            </div>
         </div>
-        <div class="blog2">
+        <div class="divBlog">
             <figure>
-                <img src="img/blog2.png" alt="" width="300"> <!-- Taille uniformisée à environ 300px de largeur -->
+                <img src="img/blog2.png" alt="Museum Exhibition" width="300">
+                <div class="author-date">
+                    <h4>Hakim Ziyech</h4>
+                    <p>15th August 2024</p>
+                </div>
             </figure>
-            <article>
+            <article class="artBlog">
                 <h3>New exhibition at our Museum</h3>
                 <p class="txtblog">Even the all-powerful Pointing has no control about the blind almost unorthographic.</p>
-                <span>Read more</span>
             </article>
-            <div class="date">
-                <i class="fa-regular fa-user"></i>
-                <h4>Hakim Ziyech</h4>
-                <i class="fa-regular fa-clock"></i>
-                <p>15th August 2024</p>
-            </div>
         </div>
-        <div class="blog3">
+        <div class="divBlog">
             <figure>
-                <img src="img/blog1.png" alt="" width="300"> <!-- Taille uniformisée à environ 300px de largeur -->
+                <img src="img/blog1.png" alt="App Design" width="300">
+                <div class="author-date">
+                    <h4>John Doe</h4>
+                    <p>20th June 2019</p>
+                </div>
             </figure>
-            <article>
+            <article class="artBlog">
                 <h3>Design your apps in your own way</h3>
                 <p class="txtblog">Pityful a rhetoric question ran over her cheek, then she continued her way.</p>
-                <span>Read more</span>
             </article>
-            <div class="date">
-                <i class="fa-regular fa-user"></i>
-                <h4>John Doe</h4>
-                <i class="fa-regular fa-clock"></i>
-                <p>20th June 2019</p>
-            </div>
         </div>
     </section>
     
-
     <!--=======================================Section Pricing====================================-->
     <section class="part2">
         <h3>Our Pricing</h3>

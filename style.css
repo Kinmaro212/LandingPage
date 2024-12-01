@@ -1,6 +1,7 @@
 /* ---------------------- RESET ---------------------- */
 * {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -128,9 +129,6 @@ h2 {
     margin-top: 20px;
 }
 
-.txtParallax.h4 {
-    /* Vide, car aucune propriété spécifique n'est définie */
-}
 
 /* ---------------------- STRUCTURES ---------------------- */
 .firstPart {
@@ -185,7 +183,6 @@ h2 {
 }
 
 article.team {
-    margin-bottom: 100px;
     width: 50%;
 }
 
@@ -228,14 +225,7 @@ article.team {
 }
 
 /* ---------------------- ÉQUIPE ---------------------- */
-.Pteam {
-    width: 100%;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 0.6em;
-}
+
 
 .laTeam {
     display: flex;
@@ -251,7 +241,9 @@ article.team {
 
 .fteam {
     text-align: center;
-    flex: 1 1 200px;
+    margin-left: 2em;
+    margin-right: 2em;
+    justify-items: center;
 }
 
 .fteam img {
@@ -265,11 +257,29 @@ article.team {
 .allTeam{
     display: flex;
     margin: 2em;
+    justify-content: center;
+
 }
 
 article.team{
     width: 100%;
     text-align: center;
+    justify-items: center;
+}
+
+article.team h3{
+    width: 40%;
+    
+}
+
+.Pteam {
+    width: 40%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.6em;
+    color: rgb(69, 69, 69);
 }
 /* ---------------------- MAIN ---------------------- */
 main {
@@ -287,21 +297,132 @@ main {
 
 /* ---------------------- PARALLAX ---------------------- */
 .parallax {
-    background-image: url(img/parallax.png);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 40vh;
-    color: white;
-    justify-items: center;
+    position: relative; /* Je mets la position relative pour que je puisse ajuster facilement les éléments à l'intérieur de cette section sans affecter le reste de la page. */
+    height: 400px; /* Je choisis une hauteur de 400px pour cette section, mais je peux ajuster cela si j'ai besoin de plus ou moins d'espace. */
 }
 
+/* Avec relative sur la section pour qu'elle serve de référence pour les éléments à l'intérieur.
+Avec absolute sur l'image, elle se place directement par-dessus la section et couvre toute sa surface sans bouger avec le contenu. 
+Avec background-attachment fixed on garde l'image fixe pendant que le texte et les autres éléments défilent, créant l'effet parallax */
+  
+  /* Image de fond */
+  .backgroundParallax {
+    background-image: url('img/parallax.png'); /* Je choisis une image de fond ici. Je peux la remplacer par l'image de mon choix. */
+    background-size: cover; /* on mets "cover" pour que l'image remplisse toute la section sans déformer son aspect. */
+    background-position: center; /* Je centre l'image pour qu'elle soit bien placée, même si l'écran est plus grand. */
+    background-attachment: fixed; /* Je choisis "fixed" pour créer l'effet parallax, où l'image reste fixe quand on fait défiler la page. */
+    filter: brightness(50%); /* J'assombri l'image de fond pour que le texte soit plus lisible par-dessus. */
+    height: 100%; 
+    width: 100%; 
+    position: absolute; /* on choisis "absolute" pour que l'image se superpose à la section et occupe tout l'espace. */
+}
+  
+/* Contenu texte */
 .artParallax {
-    width: 100%;
-    height: 40vh;
+    position: relative; /* Permet de placer le texte au-dessus */
+    text-align: center;
+    justify-items: center;
+    color: white; /* Texte clair */
+    padding: 20px;
+    display: flex; /* On utilise flex pour centrer le contenu */
+    flex-direction: column; /* Pour que le titre et le texte soient en colonne */
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+    height: 100%; /* Assure que l'artParallax prend toute la hauteur de la section */
 }
 
+  
+  .artParallax h3 {
+    margin-bottom: 10px; /* on mets un peu d'espace sous le titre pour que ça ne soit pas trop compact avec le texte suivant. */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+  .txtParallax {
+    margin-bottom: 20px;
+    width: 87%;
+  }
+  
+  .artParallax button {
+    padding: 10px 20px; /* Je mets un peu de padding autour du texte du bouton pour qu'il soit facile à cliquer. */
+    background: transparent;
+    border-radius: 5px; /* Je rends les coins du bouton arrondis pour un effet plus doux. */
+    color: white;
+    border: solid 1px white;
+
+}
+  
+.artParallax button:hover {
+    background-color: rgb(153, 153, 153); /*je le fais devenir blanc pour un effet animé quand je passe le curseur dessus. */
+}
+
+/* ---------------------- BLOG ---------------------- */
+/* Conteneur principal */
+.blog {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.divBlog {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin: 30px;
+}
+
+/* Images */
+figure {
+    margin: 0 auto; /* Centre l'image */
+    position: relative;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Ajoute des coins arrondis */
+    transition: filter 0.3s ease; /* Transition pour l'effet de luminosité */
+}
+
+/* Effet brightness au survol */
+.divBlog:hover figure img {
+    filter: brightness(30%); /* Réduit la luminosité de l'image au survol */
+}
+
+/* Auteur et date sur l'image */
+.author-date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.divBlog:hover .author-date {
+    opacity: 1; /* Va Afficher les infos sur l'image au survol */
+}
+
+/* Texte sous l'image */
+.artBlog {
+    margin-top: 10px;
+    text-align: center; /* Centre le texte */
+}
+
+article h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+article .txtblog {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+
+}
 /* ---------------------- FOOTER ---------------------- */
 footer {
     background-color: rgb(30, 30, 30);
