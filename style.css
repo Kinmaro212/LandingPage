@@ -22,11 +22,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
+    width: 100%;
 }
-
 .tete h2 {
-    font-size: 1.8rem;
-    margin-right: 5em;
+    font-size: 2.3rem;
 }
 
 /* Navigation */
@@ -43,7 +42,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 500;
     padding: 5px 10px;
     transition: background-color 0.3s, color 0.3s;
@@ -61,11 +60,13 @@ nav ul li a:hover {
 /* Réseaux sociaux */
 span a {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     margin-left: 15px;
     transition: color 0.3s;
 }
-
+.reseaux{
+    padding-right: 1em;
+}
 span a:hover {
     color: rgb(255, 220, 0);
 }
@@ -79,11 +80,12 @@ span a:hover {
 
 /* ---------------------- TITRES ---------------------- */
 h1 {
-    width: 200px;
+    width: 100%;
     color: rgb(18, 18, 18);
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
+    font-size: 4em;
     line-height: 1.2em;
     padding-bottom: 0.5em;
 }
@@ -105,12 +107,15 @@ h2 {
 
 .productFeatures {
     justify-items: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
 
 .productFeatures.h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
+    font-size: 1.5em;
 }
 
 .txtProductFeatures {
@@ -118,7 +123,7 @@ h2 {
     text-align: center;
     color: rgb(123, 122, 122);
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
     font-size: 12.5px;
 }
@@ -127,7 +132,9 @@ h2 {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 20px;
+    font-size: 1.3em;
 }
+
 
 
 /* ---------------------- STRUCTURES ---------------------- */
@@ -136,7 +143,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100%;
 }
 
 .secondPart {
@@ -152,9 +159,9 @@ h2 {
 /* ---------------------- FORMULAIRE ---------------------- */
 #subscribe {
     position: relative;
-    right: 108px;
+    right: 105px;
     width: 100px;
-    height: 2.1em;
+    height: 2.2em;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -166,8 +173,8 @@ h2 {
 }
 
 #email {
-    width: 70%;
-    height: 2.5em;
+    width: 50%;
+    height: 2.3em;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -179,7 +186,8 @@ h2 {
 /* ---------------------- ARTICLES & CONTENUS ---------------------- */
 .firstArticle {
     width: 50%;
-    padding: 1em 0 0 8em;
+    padding: 3em 0 0 8em;
+    justify-content: center;
 }
 
 article.team {
@@ -187,26 +195,37 @@ article.team {
 }
 
 .presentation {
-    width: 70%;
+    width: 100%;
     text-align: justify;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    font-style: normal;
-    font-size: 0.6em;
+    font-style: normal bold;
+    font-size: 1.3em;
     color: rgb(69, 69, 69);
     padding-bottom: 0.5em;
 }
+
+.accueil{
+    width: 65%;
+    padding-top: 5em;
+
+}
+
+
+
 
 /* ---------------------- PRODUITS ---------------------- */
 .figProductFeatures {
     width: 20em;
     height: 20em;
     padding: 40px;
+    margin-left:5em;
     background: rgb(112, 193, 231);
     background: radial-gradient(circle, rgba(112, 193, 231, 1) 0%, rgba(67, 151, 189, 1) 51%);
     border-radius: 10px;
     color: white;
     align-content: center;
+    box-shadow: #444 1px 1px 5px ;
 }
 
 .figSecondContainer {
@@ -252,6 +271,18 @@ article.team {
     height: 200px;
     object-fit: cover;
     margin: 1em;
+    filter: grayscale(100%);
+}
+
+.fteam img:hover{
+    border-radius: 50%;
+    box-shadow: #333 10px 20px 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 1em;
+    filter: grayscale(0);
+
 }
 
 .allTeam{
@@ -269,6 +300,9 @@ article.team{
 
 article.team h3{
     width: 40%;
+    padding-top: 2em;
+    padding-bottom: 0.8em;
+    font-size: 1.4em;
     
 }
 
@@ -276,23 +310,28 @@ article.team h3{
     width: 40%;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     font-style: normal;
     font-size: 0.6em;
     color: rgb(69, 69, 69);
+    padding-bottom: 3em;
 }
 /* ---------------------- MAIN ---------------------- */
 main {
     height: 50vh;
 }
 
-.imgBigCat {
+.imgBigCat{
     display: flex;
+    width: 100%;
+    padding-right: 1em;
+
 }
 
 .imgCat {
     display: flex;
-    width: 350px;
+    width: 40%;
+    padding-top: 5em;
 }
 
 /* ---------------------- PARALLAX ---------------------- */
@@ -372,15 +411,11 @@ Avec background-attachment fixed on garde l'image fixe pendant que le texte et l
     margin: 30px;
 }
 
-/* Images */
-figure {
-    margin: 0 auto; /* Centre l'image */
-    position: relative;
-}
+
 
 figure img {
     width: 100%;
-    height: auto;
+
     border-radius: 15px; /* Ajoute des coins arrondis */
     transition: filter 0.3s ease; /* Transition pour l'effet de luminosité */
 }
@@ -393,10 +428,9 @@ figure img {
 /* Auteur et date sur l'image */
 .author-date {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
     color: white;
-    padding: 5px 10px;
     font-size: 12px;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -413,7 +447,7 @@ figure img {
 }
 
 article h3 {
-    font-size: 16px;
+    font-size: 1.5em;
     margin: 0;
 }
 
@@ -421,7 +455,14 @@ article.txtblog {
     font-size: 14px;
     color: #555;
     margin-top: 5px;
+}
 
+.txtblog{
+    margin-bottom: 1em;
+}
+
+.blog{
+    padding-bottom: 3em;
 }
 
 .readMore {
@@ -442,6 +483,27 @@ article.txtblog {
 }
 
 
+.fa-clock{
+    padding-left: 30px;
+    padding-top:10px ;
+    margin: 0;
+}
+.fa-user{
+    font-size: 1em;
+    margin: 0;
+}
+.sideIcon{
+    font-size: 2em;
+
+}
+.sideIcon2{
+    font-size: 1.5em;
+    padding-right: 2em;
+}
+
+.bug{
+    padding-left:3em ;
+}
 /* ---------------------- Pricing ---------------------- */
 
 .pricing {
@@ -452,27 +514,38 @@ article.txtblog {
 
 .pricing.container h3{
     text-align: center;
-
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
 }
+
 
 article.artPricing1{
-    width: 50%;
+    width: 30%;
     margin-left: 1em;
-    margin-top: 1em;
-
 }
 
+.artPricing1 h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.pricing1{
+    align-items: center;
+    width: 100%;
+}
 
 .txtPricing {
-    font-size: 1rem;
+    font-size: 1em;
     color: #666;
     margin-bottom: 20px;
-    width: 50%;
-    text-align: baseline;
+    width: 100%;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     font-style: normal;
-    font-size: 0.8em;
 }
 
 
@@ -489,22 +562,40 @@ article.artPricing1{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.imgcrea{
-width: 50em;
-
+.happyUser h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;
 }
 
+.completeProject h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.imgCreativity{
+    width: 50%;
+    text-align: center;
+}
+
+.imgcrea{
+    width: 500px;
+}
 .container{
     display: flex;
+    justify-content: center;
 
 }
 
 .artPricing1{
     width: 50%;
-    margin-right: 100px;
-
     margin-top: 20px;
 }
+
+
 
 .artPricing1 h3{
 
@@ -586,21 +677,43 @@ width: 50em;
 .starter dl,
 .advanced dl,
 .professional dl {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 10px;
     color: #444;
     font-size: 16px;
+    width: 100%;
+    height: 23vh;
+
 }
 
-dl dt {
+.advanced{
+    transform: translateY(-30px);
+}
+.padding{
+ display: flex;
+ width: 100%;
+ padding-bottom: 1em;
+ justify-content: space-between;
+}
+
+
+
+.fa-circle-check{
+    color:green
+}
+
+.fa-circle-xmark{
+    color: red;
+}
+
+ dt {
     text-align: left;
     font-weight: bold;
+;
 }
 
 dl dd {
     text-align: right;
-    margin: 0;
+
 }
 
 /* Promo Badge for Advanced Plan */
@@ -613,7 +726,7 @@ dl dd {
     width:60px;
     height: 60px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 0% 10%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -628,10 +741,29 @@ justify-content: center;
 footer {
     background-color: rgb(30, 30, 30);
     color: white;
-    display: flex;
     align-items: center;
     justify-items: center;
     justify-content: center;
     height: 10vh;
+    padding-top: 1em;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1em;
+
+}
+  
+.reseauxSociaux{
+margin: auto;
+justify-items: center;
+
+
 }
 
+.flouss {
+display: flex;
+list-style: none;
+justify-content: center;
+width: 10%;
+justify-content: space-between;
+
+}

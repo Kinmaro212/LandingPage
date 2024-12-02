@@ -35,9 +35,11 @@
                         </ul>
                     </nav>
                     <!-- Barre réseaux sociaux pour rediriger les utilisateurs vers les plateformes sociales de l'entreprise. -->
+                            <div class="reseaux">
                                 <span><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
                                 <span><a href="#"><i class="fa-brands fa-twitter"></i></a></span>
                                 <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+                            </div>
                 </div>
             </section>
         </header>
@@ -46,8 +48,10 @@
         <main>
             <div class="imgBigCat">
                 <article class="firstArticle">
+                <div class="accueil">
                     <h1>We are StartUp Creative Kucra Agency</h1>
                     <p class="presentation">Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
+                </div>
                     <label class="emailContact" for="email"></label>
                     <div class="inputSubmit">
                         <input type="email" id="email" name="email" placeholder="Enter your email">
@@ -97,28 +101,28 @@
                 <figure class="fteam">
                     <h4>1499+</h4> <!-- Statistique mise en avant pour impressionner les visiteurs. -->
                     <p class="Pteam">Complete projects</p> <!-- Description de la statistique. -->
-                    <img src="img/person1.png" alt="" width="300" height="300">
+                    <img src="img/person1.png" alt="" width="400" height="400">
                     <h4>Anna G. Wihite</h4> <!-- Nom du membre de l'équipe. -->
                     <p class="Pteam">CEO/Founder</p> <!-- Fonction du membre. -->
                 </figure>
                 <figure class="fteam">
                     <h4>1080k</h4>
                     <p class="Pteam">Satisfied Clients</p>
-                    <img src="img/person2.png" alt="" width="300" height="300">
+                    <img src="img/person2.png" alt="" width="400" height="400">
                     <h3>Willian S. Blay</h3>
                     <p class="Pteam">CTO/Co-Founder</p>
                 </figure>
                 <figure class="fteam">
                     <h4>608</h4>
                     <p class="Pteam">Team Members</p>
-                    <img src="img/person3.png" alt="" width="300" height="300">
+                    <img src="img/person3.png" alt="" width="400" height="400">
                     <h3>Maria B. Morales</h3>
                     <p class="Pteam">Web Designer</p>
                 </figure>
                 <figure class="fteam">
                     <h4>252</h4>
                     <p class="Pteam">Employee</p>
-                    <img src="img/person4.png" alt="" width="300" height="300">
+                    <img src="img/person4.png" alt="" width="400" height="400">
                         <h3>Luke L. Johnston</h3>
                         <p class="Pteam">Web Developer</p>
                 </figure>
@@ -127,7 +131,7 @@
     </section>
         <!--=======================================Section parallax====================================-->
         <section class="parallax">
-            <div class="backgroundParallax"></div> <!-- Division pour l'image de fond -->
+            <div class="backgroundParallax"></div><!-- Division pour l'image de fond -->
             <article class="artParallax">
             <h3>Let's get started with Kucra</h3>
             <p class="txtParallax">
@@ -142,8 +146,8 @@
                 <figure>
                     <img src="img/blog3.png" alt="Road Trip" width="300">
                     <div class="author-date">
-                        <h4>Calvin Carlo</h4>
-                        <p>20th March 2021</p>
+                        <p class="sideIcon"><i class="fa-regular fa-user"></i> Calvin Carlo</p>
+                        <p class="sideIcon2"><i class="fa-regular fa-clock"></i> 20th March 2021</p>
                     </div>
                 </figure>
                 <article class="artBlog">
@@ -156,8 +160,8 @@
                 <figure>
                     <img src="img/blog2.png" alt="Museum Exhibition" width="300">
                     <div class="author-date">
-                        <h4>Hakim Ziyech</h4>
-                        <p>15th August 2024</p>
+                        <p class="sideIcon"><i class="fa-regular fa-user"></i> Hakim Ziyech</p>
+                        <p class="sideIcon2"><i class="fa-regular fa-clock"></i> 15th August 2024</p>
                     </div>
                 </figure>
                 <article class="artBlog">
@@ -170,8 +174,8 @@
                 <figure>
                     <img src="img/blog1.png" alt="App Design" width="300">
                     <div class="author-date">
-                        <h4>John Doe</h4>
-                        <p>20th June 2019</p>
+                        <p class="sideIcon"><i class="fa-regular fa-user"></i> John Doe</p>
+                        <p class="sideIcon2"><i class="fa-regular fa-clock bug"></i> 20th June 2019</p>
                     </div>
                 </figure>
                 <article class="artBlog">
@@ -228,16 +232,26 @@
                         </div>
                         <div class="liStarter">
                             <dl>
-                                <dt>Brandwidth</dt>
-                                <dd>1GB</dd>
-                                <dt>Onlinespace</dt>
-                                <dd>500MB</dd>
-                                <dt>Support</dt>
-                                <dd>No</dd>
-                                <dt>Domain</dt>
-                                <dd>1</dd>
-                                <dt>Hidden Fees</dt>
-                                <dd>No</dd>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Brandwidth</dt>
+                                    <dd>1GB</dd>
+                                </div>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Onlinespace</dt>
+                                    <dd>500MB</dd>
+                                </div>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-xmark"></i> Support</dt>
+                                    <dd>No</dd>
+                                </div>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Domain</dt>
+                                    <dd>1</dd>
+                                </div>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-xmark"></i> Hidden Fees</dt>
+                                    <dd>No</dd>
+                                </div>
                             </dl>
                         </div>
                     </div>
@@ -252,16 +266,26 @@
                         <div class="liAdvanced">
                         
                             <dl>
-                                <dt>Brandwidth</dt>
-                                <dd>2GB</dd>
-                                <dt>Onlinespace</dt>
-                                <dd>1GB</dd>
-                                <dt>Support</dt>
-                                <dd>Yes</dd>
-                                <dt>Domain</dt>
-                                <dd>3</dd>
-                                <dt>Hidden Fees</dt>
-                                <dd>No</dd>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Brandwidth</dt>
+                                    <dd>2GB</dd>
+                                </div>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Onlinespace</dt>
+                                    <dd>1GB</dd>
+                                </div>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Support</dt>
+                                    <dd>yes</dd>
+                                </div>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Domain</dt>
+                                    <dd>3</dd>
+                                </div>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Hidden Fees</dt>
+                                    <dd>Yes</dd>
+                                </div>
                             </dl>
                         </div>
                         <div class="promo">
@@ -278,16 +302,26 @@
                     </div>
                         <div class="liProfessional">
                             <dl>
-                                <dt>Brandwidth</dt>
-                                <dd>3GB</dd>
-                                <dt>Onlinespace</dt>
-                                <dd>2GB</dd>
-                                <dt>Support</dt>
-                                <dd>Yes</dd>
-                                <dt>Domain</dt>
-                                <dd>Unlimited</dd>
-                                <dt>Hidden Fees</dt>
-                                <dd>No</dd>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Brandwidth</dt>
+                                    <dd>3GB</dd>
+                                </div>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Onlinespace</dt>
+                                    <dd>2GB</dd>
+                                </div>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Support</dt>
+                                    <dd>yes</dd>
+                                </div>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Domain</dt>
+                                    <dd>Unlimited</dd>
+                                </div>
+                                <div class="padding">
+                                    <dt><i class="fa-regular fa-circle-check"></i> Hidden Fees</dt>
+                                    <dd>Yes</dd>
+                                </div>
                             </dl>
                         </div>
                     </div>
@@ -297,10 +331,12 @@
         
         <footer>
             <div class="reseauxSociaux">
-                <span><i class="fa-brands fa-facebook-f"></i></span>
-                <span><i class="fa-brands fa-twitter"></i></span>
-                <span><i class="fa-brands fa-linkedin"></i></span>
-                <span><i class="fa-brands fa-google-plus-g"></i></span>
+               <ul class="flouss">
+                    <li><a href=""> <i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""> <i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href=""> <i class="fa-brands fa-google-plus-g"></i></a></li>
+               </ul>
             </div>
             <span>Terms & Conditions</span>
             <span>Privacy Policy</span>
