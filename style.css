@@ -49,12 +49,15 @@ nav ul li a {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+    transform : scale(1.2);
 }
 
 nav ul li a:hover {
     background-color: white;
     color: rgb(43, 192, 255);
     border-radius: 5px;
+    transform : scale(0);
+    transition : all 0.5s ease;   /* Ceci sert a ajuster la vitesse du Zoom*/ 
 }
 
 /* Réseaux sociaux */
@@ -272,19 +275,27 @@ article.team {
     object-fit: cover;
     margin: 1em;
     filter: grayscale(100%);
+    box-shadow: #333 5px 5px 5px;
+    position: relative;
 }
 
 .fteam img:hover{
     border-radius: 50%;
-    box-shadow: #333 10px 20px 20px;
     width: 200px;
     height: 200px;
     object-fit: cover;
     margin: 1em;
     filter: grayscale(0);
+    transform : scale(1.2);
+    transition : all 0.5s ease;   /* Ceci sert a ajuster la vitesse du Zoom*/   
 
 }
+.fteam img:hover .social-icon{
+    bottom: 60px;
+    left: 20px;
+    opacity: 1;
 
+}
 .allTeam{
     display: flex;
     margin: 2em;
@@ -316,6 +327,27 @@ article.team h3{
     color: rgb(69, 69, 69);
     padding-bottom: 3em;
 }
+
+.img-container img{
+}
+
+.img-container img:hover .social-icon{
+opacity: 1;
+
+}
+
+.social-icons{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: blue;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+}
+
+
 /* ---------------------- MAIN ---------------------- */
 main {
     height: 50vh;
@@ -333,6 +365,9 @@ main {
     width: 40%;
     padding-top: 5em;
 }
+
+
+
 
 /* ---------------------- PARALLAX ---------------------- */
 .parallax {
@@ -765,5 +800,12 @@ list-style: none;
 justify-content: center;
 width: 10%;
 justify-content: space-between;
+
+}
+
+.flouss a{
+    border: solid 1px white;
+    border-radius: 50%;
+    padding: 10px;
 
 }
