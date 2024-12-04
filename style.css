@@ -162,7 +162,8 @@ h2 {
 /* ---------------------- FORMULAIRE ---------------------- */
 #subscribe {
     position: relative;
-    right: 105px;
+    right: -429px;
+    top: -29.55px;
     width: 100px;
     height: 2.2em;
     font-family: "Poppins", sans-serif;
@@ -176,7 +177,7 @@ h2 {
 }
 
 #email {
-    width: 50%;
+    width: 100%;
     height: 2.3em;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -184,6 +185,14 @@ h2 {
     border-radius: 20px;
     border: none;
     padding-left: 1em;
+}
+
+.inputSubmit{
+    width: 100%;
+}
+
+.emailContact{
+    width: 100%;
 }
 
 /* ---------------------- ARTICLES & CONTENUS ---------------------- */
@@ -268,16 +277,7 @@ article.team {
     justify-items: center;
 }
 
-.fteam img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin: 1em;
-    filter: grayscale(100%);
-    box-shadow: #333 5px 5px 5px;
-    position: relative;
-}
+
 
 .fteam img:hover{
     border-radius: 50%;
@@ -290,12 +290,7 @@ article.team {
     transition : all 0.5s ease;   /* Ceci sert a ajuster la vitesse du Zoom*/   
 
 }
-.fteam img:hover .social-icon{
-    bottom: 60px;
-    left: 20px;
-    opacity: 1;
 
-}
 .allTeam{
     display: flex;
     margin: 2em;
@@ -328,23 +323,42 @@ article.team h3{
     padding-bottom: 3em;
 }
 
-.img-container img{
-}
-
-.img-container img:hover .social-icon{
+.img-container img:hover {
 opacity: 1;
-
+}
+.fteam img:hover {
+    opacity: 1;
+    display: flex;
+}
+.fteam img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 1em;
+    filter: grayscale(100%);
+    box-shadow: #333 5px 5px 5px;
+ 
 }
 
-.social-icons{
+.img-container{position:relative;
+}
+.fteam a{
     position: absolute;
-    top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     color: blue;
     text-decoration: none;
-    transform: translate(-50%, -50%);
+    top: 0;
+    width: 30%;
+
+
+    /* display: none; */
+}
+
+.fteam:hover a{
+    /* display: block; */
+    /* top: -150px;
+    left: -60px; */
+    font-size: 1.5em;
 }
 
 
@@ -365,9 +379,6 @@ main {
     width: 40%;
     padding-top: 5em;
 }
-
-
-
 
 /* ---------------------- PARALLAX ---------------------- */
 .parallax {
@@ -682,7 +693,6 @@ article.artPricing1{
     width: 300px;
     padding: 20px;
     background-color: #fff;
-    border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -724,10 +734,10 @@ article.artPricing1{
     transform: translateY(-30px);
 }
 .padding{
- display: flex;
- width: 100%;
- padding-bottom: 1em;
- justify-content: space-between;
+    display: flex;
+    width: 100%;
+    padding-bottom: 1em;
+    justify-content: space-between;
 }
 
 
@@ -766,11 +776,40 @@ dl dd {
 }
 
 .montant{
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 
+.montant{
+    text-align: center;
+    align-items: center;
+}
+.montant .dollard{
+    font-size: 2.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #007bff;
+    text-align: center;
+}
+
+.joinNow{
+    
+    background-color: #007bff;
+    border-radius: 5px;
+    padding: .5em;
+    width: 95%;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+.joinNow a{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+    vertical-align: middle;
+}
 /* ---------------------- FOOTER ---------------------- */
 footer {
     background-color: rgb(30, 30, 30);
@@ -787,24 +826,66 @@ footer {
 }
   
 .reseauxSociaux{
-margin: auto;
-justify-items: center;
+    margin: auto;
+    justify-items: center;
 
 
 }
 
-.flouss {
-display: flex;
-list-style: none;
-justify-content: center;
-width: 10%;
-justify-content: space-between;
+.rsxFooter {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 15%;
+    justify-content: space-between;
 
 }
 
-.flouss a{
-    border: solid 1px white;
+.rsxFooter li{
+    
     border-radius: 50%;
-    padding: 10px;
+    border: 1px solid grey;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
 
+}
+
+.rsxFooter a{
+    color: white;
+
+}
+
+.charte1 , .charte2{
+    border-right: 2px solid white ;
+    margin-right: 10px;
+
+}
+
+.charte1 , .charte2, .charte3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: small;
+    
+}
+
+.rgpd{
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.copyright{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style:normal;
+    font-size: x-small;
+    padding-top: 10px;
 }
