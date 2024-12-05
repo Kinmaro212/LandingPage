@@ -257,111 +257,33 @@ article.team {
 
 /* ---------------------- ÉQUIPE ---------------------- */
 
+.equipe{
 
-.laTeam {
+    padding: 2% 10%;
     display: flex;
+    flex-direction: column;
 }
 
-.equipe {
-    justify-content: center;
+.team{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    width: 100%;
 }
 
-.fteam {
+.Pteam{
+    width: 50%;
     text-align: center;
-    margin-left: 2em;
-    margin-right: 2em;
-    justify-items: center;
 }
 
-
-
-.fteam img:hover{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin: 1em;
-    filter: grayscale(0);
-    transform : scale(1.2);
-    transition : all 0.5s ease;   /* Ceci sert a ajuster la vitesse du Zoom*/   
+.img-container{
+    justify-content: space-around;
 
 }
 
 .allTeam{
-    display: flex;
-    margin: 2em;
-    justify-content: center;
+    display:flex;
 
 }
-
-article.team{
-    width: 100%;
-    text-align: center;
-    justify-items: center;
-}
-
-article.team h3{
-    width: 40%;
-    padding-top: 2em;
-    padding-bottom: 0.8em;
-    font-size: 1.4em;
-    
-}
-
-.Pteam {
-    width: 40%;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 0.6em;
-    color: rgb(69, 69, 69);
-    padding-bottom: 3em;
-}
-
-.img-container img:hover {
-opacity: 1;
-}
-.fteam img:hover {
-    opacity: 1;
-    display: flex;
-}
-.fteam img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin: 1em;
-    filter: grayscale(100%);
-    box-shadow: #333 5px 5px 5px;
- 
-}
-
-.img-container{position:relative;
-}
-.fteam a{
-    position: absolute;
-    color: blue;
-    text-decoration: none;
-    top: 0;
-    width: 30%;
-
-
-    /* display: none; */
-}
-
-.fteam:hover a{
-    /* display: block; */
-    /* top: -150px;
-    left: -60px; */
-    font-size: 1.5em;
-}
-
-
 /* ---------------------- MAIN ---------------------- */
 main {
     height: 50vh;
@@ -459,12 +381,6 @@ Avec background-attachment fixed on garde l'image fixe pendant que le texte et l
 
 
 
-figure img {
-    width: 100%;
-
-    border-radius: 15px; /* Ajoute des coins arrondis */
-    transition: filter 0.3s ease; /* Transition pour l'effet de luminosité */
-}
 
 /* Effet brightness au survol */
 .divBlog:hover figure img {
