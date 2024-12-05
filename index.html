@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS pour styliser le contenu de la page. -->
     <script src="https://kit.fontawesome.com/2ab272435c.js" crossorigin="anonymous"></script> <!-- Charge les icônes de FontAwesome pour une utilisation dans la page. -->
-    <link rel="stylesheet" href="script.js">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -55,7 +56,7 @@
                     <form class="emailContact" for="email">
                         <div class="inputSubmit">
                             <input type="email" id="email" name="email" placeholder="Enter your email">
-                            <input id="subscribe" type="submit" value="Subscribe"></input>
+                            <button  type="submit" >Subscribe</button>
                         </div>
                     </form>
                 </div>
@@ -91,14 +92,14 @@
             </figure>
         </section>
         <!--=======================================Section équipe====================================-->
-        <section id="equipe">
-            <div id="team">
+        <section class="equipe" id="equipe">
+            <div class=team>
                 <h2 >We're a dynamic team of talented people of innovative & marketing expert</h2>
                 <p class="pTeam">
                     To achieve this, it would be necessary to have uniform grammar, pronunciation, and more common words. If several languages of the resulting language.
                 </p>
             </div>
-            <div id="allTeam">
+            <div class="allTeam">
                 <div class="teamContent">
                     <div class="teamTitle">
                         <h3>1499+</h3>
@@ -106,7 +107,7 @@
                     </div>
                     <div class="teamImg">
                         <figure class="equipeImg">
-                            <img src="img/person1.png" alt="une femme">
+                            <img src="img/person1.png" alt="">
                         </figure>
                         <div class="teamSocial">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -126,7 +127,7 @@
                     </div>
                     <div class="teamImg">
                         <figure class="equipeImg">
-                            <img src="img/person2.png" alt="un homme">
+                            <img src="img/person2.png" alt="">
                         </figure>
                         <div class="teamSocial">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -139,14 +140,14 @@
                         <p>CTO/Co-Founder</p>
                     </div>
                 </div>
-                <div class="teamTitle">
-                    <div class="teamContent">
+                <div class="teamContent">
+                    <div class="teamTitle">
                         <h3>608</h3>
                         <p>Team Members</p>
                     </div>
                     <div class="teamImg">
                         <figure class="equipeImg">
-                            <img src="img/person3.png" alt="une femme">
+                            <img src="img/person3.png" alt="">
                         </figure>
                         <div class="teamSocial">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -159,14 +160,14 @@
                         <p>Web Designer</p>
                     </div>
                 </div>
-                <div class="teamTitle">
-                    <div class="teamContent">
+                <div class="teamContent">
+                    <div class="teamTitle">
                         <h3>252</h3>
                         <p>Employee</p>
                     </div>
                     <div class="teamImg">
                         <figure class="equipeImg">
-                            <img src="img/person4.png" alt="un homme">
+                            <img src="img/person4.png" alt="">
                         </figure>
                         <div class="teamSocial">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -181,7 +182,6 @@
                 </div>
             </div>
         </section>
-        
         <!--=======================================Section parallax====================================-->
         <section class="parallax" id="parallax">
             <div class="backgroundParallax"></div><!-- Division pour l'image de fond -->
@@ -197,10 +197,16 @@
         <section class="blog" id="blog">
             <div class="divBlog">
                 <figure>
-                    <img src="img/blog3.png" alt="Road Trip" width="300">
+                    <img src="img/blog3.png" alt="Road Trip" width="500">
                     <div class="author-date">
-                        <p class="sideIcon"><i class="fa-regular fa-user"></i> Calvin Carlo</p>
-                        <p class="sideIcon2"><i class="fa-regular fa-clock"></i> 20th March 2021</p>
+                        <div class="overInt">
+                            <i class="fa-regular fa-user"></i>
+                            <h5> Sarah Croche </h5>
+                        </div>
+                        <div class="overInt">
+                            <i class="fa-regular fa-clock"></i>
+                            <p> 15th september 2012 </p>
+                        </div>
                     </div>
                 </figure>
                 <article class="artBlog">
@@ -211,10 +217,16 @@
             </div>
             <div class="divBlog">
                 <figure>
-                    <img src="img/blog2.png" alt="Museum Exhibition" width="300">
+                    <img src="img/blog2.png" alt="Museum Exhibition" width="500">
                     <div class="author-date">
-                        <p class="sideIcon"><i class="fa-regular fa-user"></i> Hakim Ziyech</p>
-                        <p class="sideIcon2"><i class="fa-regular fa-clock"></i> 15th August 2024</p>
+                        <div class="overInt">
+                            <i class="fa-regular fa-user"></i>
+                            <h5> Hakim Ziyech </h5>
+                        </div>
+                        <div class="overInt">
+                            <i class="fa-regular fa-clock"></i>
+                            <p> 15th August 2022 </p>
+                        </div>
                     </div>
                 </figure>
                 <article class="artBlog">
@@ -225,10 +237,16 @@
             </div>
             <div class="divBlog">
                 <figure>
-                    <img src="img/blog1.png" alt="App Design" width="300">
+                    <img src="img/blog1.png" alt="App Design" width="500">
                     <div class="author-date">
-                        <p class="sideIcon"><i class="fa-regular fa-user"></i> John Doe</p>
-                        <p class="sideIcon2"><i class="fa-regular fa-clock bug"></i> 20th June 2019</p>
+                        <div class="overInt">
+                            <i class="fa-regular fa-user"></i>
+                            <h5> John Doe </h5>
+                        </div>
+                        <div class="overInt">
+                            <i class="fa-regular fa-clock"></i>
+                            <p> 18th February 2015 </p>
+                        </div>
                     </div>
                 </figure>
                 <article class="artBlog">
@@ -410,5 +428,7 @@
                 <p>2022&#xa9; KUCRA - Landing Page Template by Pichforest</p>
             </div>
         </footer>
+        <button id="scrollTopBtn">TP</button>
     </body>
+    <script src="script.js"></script>
 </html>

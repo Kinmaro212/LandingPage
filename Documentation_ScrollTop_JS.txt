@@ -1,0 +1,76 @@
+
+ JavaScript pour le bouton Scroll Top
+
+1. document.addEventListener()
+Cette méthode permet d'ajouter un écouteur d'événement sur un objet. Elle attend qu'un événement se produise sur cet objet avant d'exécuter une fonction.
+
+
+document.addEventListener(event, function, useCapture);
+- event L'événement à écouter, par exemple 'DOMContentLoaded'.
+- function La fonction à exécuter lorsque l'événement se déclenche.
+- useCapture Un paramètre optionnel qui permet de définir si l'événement doit être capturé ou non (par défaut, c'est 'false').
+
+ https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+2. document.getElementById()
+ Cette méthode permet de récupérer un élément HTML en utilisant son identifiant (id).
+
+
+const element = document.getElementById('id');
+- id L'identifiant unique de l'élément HTML que tu veux récupérer.
+
+ https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+
+3. window.onscroll
+ Cette propriété permet de définir une fonction qui sera exécutée chaque fois que l'utilisateur fait défiler la page (scroll).
+
+
+window.onscroll = function() {
+    // Code à exécuter lorsqu'un événement de scroll se produit
+};
+
+ https://developer.mozilla.org/en-US/docs/Web/API/Window/onscroll
+
+4. scrollTop (propriété de document.documentElement)
+ La propriété scrollTop permet de récupérer ou définir la position de défilement vertical de l'élément.
+
+
+let scrollPosition = document.documentElement.scrollTop;
+Cette propriété est souvent utilisée pour savoir jusqu'où la page a été défilée.
+
+ https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop
+5. element.style.display
+ Cette propriété permet de récupérer ou de modifier la valeur de l'attribut display CSS d'un élément HTML.
+
+
+element.style.display = 'value'; // Pour modifier
+let displayValue = element.style.display; // Pour récupérer
+- value La valeur de l'attribut display, comme 'none', 'block', 'inline', etc.
+
+ https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
+
+6. scrollTopBtn.addEventListener()
+ Cette méthode ajoute un écouteur d'événement sur un élément HTML spécifique. Ici, l'événement est un clic sur le bouton, et la fonction liée est exécutée lorsque l'utilisateur clique.
+
+
+element.addEventListener(event, function, useCapture);
+- event L'événement à écouter, ici 'click'.
+- function La fonction à exécuter lorsque l'événement se déclenche.
+- useCapture Paramètre optionnel (en général, on laisse 'false').
+
+ https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+7. window.scrollTo()
+ Cette méthode fait défiler la fenêtre à une position donnée sur la page.
+
+
+window.scrollTo({
+    top: value, 
+    left: value,
+    behavior: 'smooth' | 'auto'
+});
+- top Position verticale (en pixels).
+- left Position horizontale (en pixels).
+- behavior Contrôle le type de défilement, avec les valeurs possibles 'smooth' pour un défilement fluide et 'auto' pour un défilement instantané.
+
+ https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo
