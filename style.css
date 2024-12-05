@@ -575,11 +575,18 @@ article.txtblog {
     align-items: center;
     padding-left: 2em;
 }
-.overInt h5 {
-    font-size: 1em;
-    color: gray;
+.overInt, h5 {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
+
+.overInt p{
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
 /* ---------------------- Pricing ---------------------- */
 
 .pricing {
@@ -2096,4 +2103,13 @@ footer {
     .artPricing1{
     width: 100%;
     }
+    li a {
+        display:block;
+        justify-items: center;
+    }
+    .teamContent{
+        text-align: center;
+        justify-content: center;
+
+}
 }
