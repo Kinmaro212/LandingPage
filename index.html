@@ -14,6 +14,7 @@
     <title>Landing Page</title> 
 </head>
 <body>
+    <div class="bigcontainer">
     <!--=======================================Header====================================-->
     <div class="backgroundGradiant">
         <header>
@@ -184,20 +185,21 @@
         </section>
         <!--=======================================Section parallax====================================-->
         <section class="parallax" id="parallax">
-            <div class="backgroundParallax"></div><!-- Division pour l'image de fond -->
-            <article class="artParallax">
-            <h3>Let's get started with Kucra</h3>
-            <p class="txtParallax">
-                They are a good way to get you started if you want to build something similar or use from existing apps which will reduce the cost, efforts and time of the developers.
-            </p>
-            <button>Get Started</button>
-            </article>
+            <div class="backgroundParallax">
+                <div class="descriptionParallax">
+                    <h2>Let's get strated with Kucra</h2>
+                    <p>They are a good way to get you started if you want to build something similar or use from existing apps which will reduce the cost, efforts and time oh the developers.</p>
+                    <button class="btn">Get Started</button>    
+            </div>
+        </div>
         </section>
+        
+        
         <!--=======================================Section blog====================================-->
         <section class="blog" id="blog">
             <div class="divBlog">
                 <figure>
-                    <img src="img/blog3.png" alt="Road Trip" width="500">
+                    <img src="img/blog3.png" alt="Road Trip" >
                     <div class="author-date">
                         <div class="overInt">
                             <i class="fa-regular fa-user"></i>
@@ -217,7 +219,7 @@
             </div>
             <div class="divBlog">
                 <figure>
-                    <img src="img/blog2.png" alt="Museum Exhibition" width="500">
+                    <img src="img/blog2.png" alt="Museum Exhibition">
                     <div class="author-date">
                         <div class="overInt">
                             <i class="fa-regular fa-user"></i>
@@ -237,7 +239,7 @@
             </div>
             <div class="divBlog">
                 <figure>
-                    <img src="img/blog1.png" alt="App Design" width="500">
+                    <img src="img/blog1.png" alt="App Design" >
                     <div class="author-date">
                         <div class="overInt">
                             <i class="fa-regular fa-user"></i>
@@ -260,28 +262,27 @@
     <!--=======================================Section Pricing====================================-->
         <section class="allPricing" id="allPricing">
             <section class="pricing1">
-                <div class="container">
-                    <article class="artPricing1">
+                    <div class="artPricing1">
                         <h3>We are digital creative Landing Page</h3>
                         <p class="txtPricing">
                             The difference between a successful person and others is not a lack of strength,
                             not a lack of knowledge, but rather a lack of will. Composed in a pseudo-Latin language which more or less corresponds.
                         </p>
                         <div class="stat">
-                            <article class="happyUser">
+                            <div class="happyUser">
                                 <h4>4957</h4>
                                 <p class="txtPricing">Happy User</p>
-                            </article>
-                            <article class="completeProject">
+                            </div>
+                            <div class="completeProject">
                                 <h4>1599</h4>
                                 <p class="txtPricing">Complete Project</p>
-                            </article>
+                            </div>
                         </div>
-                    </article>
+                    </div>
                     <div class="imgCreativity">
                         <img class="imgcrea" src="img/creativity.png" alt="creativity">
                     </div>
-                </div>
+              
             </section>
         
             <section class="pricing2">
@@ -426,9 +427,9 @@
             </div>
             <div class="copyright">
                 <p>2022&#xa9; KUCRA - Landing Page Template by Pichforest</p>
-            </div>
+            </div><button id="scrollTopBtn"><i class="fa-solid fa-arrow-up fa-1x"></i></button>
         </footer>
-        <button id="scrollTopBtn">TP</button>
-    </body>
+    </div>
+</body>
     <script src="script.js"></script>
 </html>

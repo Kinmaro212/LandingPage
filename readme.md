@@ -61,19 +61,3 @@ Bienvenue dans ce projet captivant qui vous guidera dans la création d'une **La
    - Google Fonts (Poppins)
    - Font Awesome pour les icônes
 
----
-
-## 📚 Structure des Fichiers
-
-```plaintext
-📂 MonProjetLandingPage
-├── 📁 css
-│   └── styles.css
-├── 📁 js
-│   └── scripts.js
-├── 📁 images
-│   ├── background.jpg
-│   ├── team.jpg
-│   └── icons/
-├── 📄 index.html
-└── 📄 README.md

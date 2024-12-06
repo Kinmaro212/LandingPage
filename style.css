@@ -248,6 +248,12 @@ article.team {
     transition: transform 0.3s ease; /* Ajoute une transition douce pour l'effet de translation */
 
 }
+
+
+.secondPart{
+    padding-bottom: 5em;
+}
+
 .secondPart .figProductFeatures:hover {
     transform: translateY(-30px); /* Applique une translation vers le haut de 10px lors du survol */
 }
@@ -273,6 +279,7 @@ article.team {
     display: flex;
     flex-direction: column;
     background-color: #FFF;
+    padding-bottom: 8em;
 }
  
 
@@ -418,66 +425,64 @@ height: 700px;
 }
 
 /* ---------------------- PARALLAX ---------------------- */
-.parallax {
-    position: relative; /* Je mets la position relative pour que je puisse ajuster facilement les éléments à l'intérieur de cette section sans affecter le reste de la page. */
-    height: 400px; /* Je choisis une hauteur de 400px pour cette section, mais je peux ajuster cela si j'ai besoin de plus ou moins d'espace. */
-}
-
-/* Avec relative sur la section pour qu'elle serve de référence pour les éléments à l'intérieur.
-Avec absolute sur l'image, elle se place directement par-dessus la section et couvre toute sa surface sans bouger avec le contenu. 
-Avec background-attachment fixed on garde l'image fixe pendant que le texte et les autres éléments défilent, créant l'effet parallax */
-  
-  /* Image de fond */
-  .backgroundParallax {
-    background-image: url('img/parallax.png'); /* Je choisis une image de fond ici. Je peux la remplacer par l'image de mon choix. */
-    background-size: cover; /* on mets "cover" pour que l'image remplisse toute la section sans déformer son aspect. */
-    background-position: center; /* Je centre l'image pour qu'elle soit bien placée, même si l'écran est plus grand. */
-    background-attachment: fixed; /* Je choisis "fixed" pour créer l'effet parallax, où l'image reste fixe quand on fait défiler la page. */
-    filter: brightness(50%); /* J'assombri l'image de fond pour que le texte soit plus lisible par-dessus. */
-    height: 100%; 
-    width: 100%; 
-    position: absolute; /* on choisis "absolute" pour que l'image se superpose à la section et occupe tout l'espace. */
-}
-  
-/* Contenu texte */
-.artParallax {
-    position: relative; /* Permet de placer le texte au-dessus */
+.descriptionParallax{
+    width: 100%;
+    height: 100%;
+    display: flex;
     text-align: center;
-    justify-items: center;
-    color: white; /* Texte clair */
-    padding: 20px;
-    display: flex; /* On utilise flex pour centrer le contenu */
-    flex-direction: column; /* Pour que le titre et le texte soient en colonne */
-    align-items: center; /* Centre verticalement le contenu */
-    justify-content: center; /* Centre horizontalement le contenu */
-    height: 100%; /* Assure que l'artParallax prend toute la hauteur de la section */
-}
-
-  
-  .artParallax h3 {
-    margin-bottom: 10px; /* on mets un peu d'espace sous le titre pour que ça ne soit pas trop compact avec le texte suivant. */
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-  
-  .txtParallax {
-    margin-bottom: 20px;
-    width: 87%;
-  }
-  
-  .artParallax button {
-    padding: 10px 20px; 
-    background: transparent;
-    border-radius: 5px; /* Je rends les coins du bouton arrondis  */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
     color: white;
-    border: solid 1px white;
+}
+
+.descriptionParallax h2{
+    font-size: 1.5em;
+}
+
+.descriptionParallax p{
+    font-size: 1em;
+    padding-bottom: 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: rgb(200, 200, 200);
+}
+.descriptionParallax button{
+    padding: 15px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    transition: transform 0.3s ease;
+
+
 
 }
-  
-.artParallax button:hover {
-    background-color: rgb(153, 153, 153); /*je le fais devenir blanc pour un effet animé quand je passe le curseur dessus. */
+
+.descriptionParallax button:hover{
+    background-color: #acacac;
+    transform: translateY(-5px); /* Applique une translation vers le haut de 10px lors du survol */
 }
+
+.backgroundParallax{
+    background-image: url(img/parallax.png);
+    background-size: cover;
+    min-height: 600px;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 /* ---------------------- BLOG ---------------------- */
 /* Conteneur principal */
@@ -486,6 +491,7 @@ Avec background-attachment fixed on garde l'image fixe pendant que le texte et l
     justify-content: center;
     gap: 20px;
     width: 100%;
+    padding-top: 5em;
 }
 
 .divBlog {
@@ -527,6 +533,10 @@ Avec background-attachment fixed on garde l'image fixe pendant que le texte et l
     opacity: 1; /* Va Afficher les infos sur l'image au survol */
 }
 
+
+.divBlog figure img{
+    width: 500px;
+}
 /* Texte sous l'image */
 .artBlog {
     margin-top: 10px;
@@ -607,6 +617,8 @@ article.txtblog {
 article.artPricing1{
     width: 30%;
     margin-left: 1em;
+    align-items: center;
+    justify-content: center;
 }
 
 .artPricing1 h3{
@@ -619,6 +631,10 @@ article.artPricing1{
 .pricing1{
     align-items: center;
     width: 100%;
+    padding-left: 1em;
+    padding-top: 3em;
+    display: flex;
+
 }
 
 .txtPricing {
@@ -941,20 +957,17 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007BFF;
+    background-color: #383838;
     color: white;
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     font-size: 24px;
     cursor: pointer;
     display: none;
 }
 
-#scrollTopBtn:hover {
-    background-color: #0056b3;
-}
 
 
 /* ---------------------- Responsive design ---------------------- */
@@ -1380,67 +1393,6 @@ height: 700px;
 }
 
 /* ---------------------- PARALLAX ---------------------- */
-.parallax {
-    position: relative; /* Je mets la position relative pour que je puisse ajuster facilement les éléments à l'intérieur de cette section sans affecter le reste de la page. */
-    height: auto;
-    min-height: 400px; /* Je choisis une hauteur de 400px pour cette section, mais je peux ajuster cela si j'ai besoin de plus ou moins d'espace. */
-}
-
-/* Avec relative sur la section pour qu'elle serve de référence pour les éléments à l'intérieur.
-Avec absolute sur l'image, elle se place directement par-dessus la section et couvre toute sa surface sans bouger avec le contenu. 
-Avec background-attachment fixed on garde l'image fixe pendant que le texte et les autres éléments défilent, créant l'effet parallax */
-  
-  /* Image de fond */
-  .backgroundParallax {
-    background-image: url('img/parallax.png'); /* Je choisis une image de fond ici. Je peux la remplacer par l'image de mon choix. */
-    background-size: cover; /* on mets "cover" pour que l'image remplisse toute la section sans déformer son aspect. */
-    background-position: center; /* Je centre l'image pour qu'elle soit bien placée, même si l'écran est plus grand. */
-    background-attachment: fixed; /* Je choisis "fixed" pour créer l'effet parallax, où l'image reste fixe quand on fait défiler la page. */
-    filter: brightness(50%); /* J'assombri l'image de fond pour que le texte soit plus lisible par-dessus. */
-    height: 100%; 
-    width: 100%; 
-    position: absolute; /* on choisis "absolute" pour que l'image se superpose à la section et occupe tout l'espace. */
-}
-  
-/* Contenu texte */
-.artParallax {
-    position: relative; /* Permet de placer le texte au-dessus */
-    text-align: center;
-    justify-items: center;
-    color: white; /* Texte clair */
-    padding: 20px;
-    display: flex; /* On utilise flex pour centrer le contenu */
-    flex-direction: column; /* Pour que le titre et le texte soient en colonne */
-    align-items: center; /* Centre verticalement le contenu */
-    justify-content: center; /* Centre horizontalement le contenu */
-    height: 100%; /* Assure que l'artParallax prend toute la hauteur de la section */
-}
-
-  
-  .artParallax h3 {
-    margin-bottom: 10px; /* on mets un peu d'espace sous le titre pour que ça ne soit pas trop compact avec le texte suivant. */
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-  
-  .txtParallax {
-    margin-bottom: 20px;
-    width: 87%;
-  }
-  
-  .artParallax button {
-    padding: 10px 20px; 
-    background: transparent;
-    border-radius: 5px; /* Je rends les coins du bouton arrondis  */
-    color: white;
-    border: solid 1px white;
-
-}
-  
-.artParallax button:hover {
-    background-color: rgb(153, 153, 153); /*je le fais devenir blanc pour un effet animé quand je passe le curseur dessus. */
-}
 
 /* ---------------------- BLOG ---------------------- */
 /* Conteneur principal */
@@ -1895,20 +1847,17 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007BFF;
+    background-color: #454545;
     color: white;
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     font-size: 24px;
     cursor: pointer;
     display: none;
 }
 
-#scrollTopBtn:hover {
-    background-color: #0056b3;
-}
 
 
 /* ---------------------- Responsive design ---------------------- */
@@ -2004,7 +1953,7 @@ footer {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -2037,35 +1986,171 @@ footer {
     .rsxFooter {
         width: 50%;
     }
-    li a {
-        display:block;
+     nav ul  {
+        display:flex;
         text-align: center;
+    }
+
+    .reseaux{
+        display: flex;
+    }
+    
+    .accueil{
+        padding: 0;
     }
     .teamContent{
         text-align: center;
         align-items: center;
 }
+
+.imgCreativity{
+    width: 100%;
 }
 
+.imgCreativity img{
+    width: 100%;
+}
+
+.artPricing1{
+width: 100%;
+}
+
+.team{
+    width: 100%;
+}
+
+.team h2, .team p {
+    padding: 0%;
+    
+}
+
+.divBlog figure img{
+    width: 300px;
+}
+
+
+
+footer{
+    height: 20vh;
+}
+.pricing1 .artPricing1{
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.pricing1{
+    display: block;
+    width: 80%;
+}
+
+
+.stat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+.stat h4, .stat p{
+    text-align: center;
+}
+
+.happyUser{
+    width: 50%;
+    margin: 0;
+}
+.completeProject{
+width: 50%;
+}
+
+.artBlog a{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.descriptionParallax p {
+    font-size: 0.8em;
+    width: 85%;
+}
+
+.team h2{
+    padding-bottom: 1em;
+    text-align:center ;
+    font-size:1.4em;
+}
+.team p{
+    font-size: 0.8em;
+}
+
+.figProductFeatures{
+    width: 50%;
+}
+
+.productFeatures p{
+    width: 60%;
+    padding-top: 1em;
+}
+
+.accueil h1{
+    padding-bottom: 2em;
+    font-size: 2.5em;
+}
+.accueil p{
+    font-size: 1em;
+    padding-bottom: 2em;
+}
+
+nav li{
+    font-size: 1.5em;
+}
+.cards-container{
+    width: 80%;
+}
+.reseaux span{
+    display: block;
+    
+}
+.overInt h5{
+    font-size: 0.8em;
+}
+.overInt p{
+    font-size: 0.5em;
+    
+}
+.overInt {
+    padding-bottom: 5px;
+    padding-left: 9em;
+}
+.firstArticle{
+    padding: 0px;
+}
+#scrollTopBtn{
+    width: 35px;
+    height: 35px;
+
+}
+
+}
+
+
 @media screen and (max-width: 480px) {
-     li a {
+    .bigcontainer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    } 
+    
+    
+    li a {
         display:block;
         text-align: center;
-    }
-    .tete h2 {
-        font-size: 1.8rem;
-    }
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-    .presentation {
-        font-size: 1em;
-    }
-
-    .inputSubmit {
-        flex-direction: column;
     }
 
     .inputSubmit input,
@@ -2100,16 +2185,163 @@ footer {
     p.txtPricing{
     width:90%;
     }
+
     .artPricing1{
     width: 100%;
     }
+
     li a {
         display:block;
         justify-items: center;
     }
     .teamContent{
-        text-align: center;
-        justify-content: center;
-
+    text-align: center;
+    justify-content: center;
 }
+
+
+    .divBlog{
+        width: 100%;
+        text-align: center;
+
+    }
+    .divBlog, figure{
+        width: 100%;
+    }
+    #blog{
+        width: 100%;
+    }
+
+    footer{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .imgCreativity{
+        width: 100%;
+    }
+
+    .imgCreativity img{
+        width: 100%;
+    }
+
+    .artPricing1{
+    width: 100%;
+    }
+
+    .team{
+        width: 100%;
+    }
+
+    .team h2, .team p {
+        padding: 0%;
+        
+    }
+
+    .divBlog figure img{
+        width: 300px;
+    }
+
+    .cards-container{
+        width: 100%;
+    }
+
+    footer{
+        height: 20vh;
+    }
+    .pricing1 .artPricing1{
+        width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .pricing1{
+        display: block;
+    }
+
+
+    .stat{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+    }
+    .stat h4, .stat p{
+        text-align: center;
+    }
+
+    .happyUser{
+        width: 50%;
+        margin: 0;
+    }
+    .completeProject{
+    width: 50%;
+}
+
+    .artBlog a{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .descriptionParallax p {
+        font-size: 0.8em;
+        width: 85%;
+    }
+
+    .team h2{
+        padding-bottom: 1em;
+        text-align:center ;
+        font-size:1.4em;
+    }
+    .team p{
+        font-size: 0.8em;
+    }
+
+    .figProductFeatures{
+        width: 80%;
+    }
+
+    .productFeatures p{
+        width: 60%;
+        padding-top: 1em;
+    }
+
+    .accueil h1{
+        padding-bottom: 2em;
+        font-size: 2.5em;
+    }
+    .accueil p{
+        font-size: 1em;
+        padding-bottom: 2em;
+    }
+
+    nav li{
+        font-size: 1.5em;
+    }
+    .reseaux span{
+        display: block;
+        
+    }
+    .overInt h5{
+        font-size: 0.8em;
+    }
+    .overInt p{
+        font-size: 0.5em;
+    }
+    .overInt {
+        padding-bottom: 5px;
+    }
+    .firstArticle{
+        padding: 0px;
+    }
+    #scrollTopBtn{
+        width: 35px;
+        height: 35px;
+    }
 }
