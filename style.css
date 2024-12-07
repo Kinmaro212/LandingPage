@@ -2335,6 +2335,7 @@ nav li{
         font-size: 0.5em;
     }
     .overInt {
+        padding-left: 0px;
         padding-bottom: 5px;
     }
     .firstArticle{
