@@ -2140,209 +2140,147 @@ nav li{
 
 
 @media screen and (max-width: 480px) {
-    .bigcontainer{
+    /* Gestion globale */
+    .bigcontainer {
         width: 100%;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    } 
-    
-    
+    }
+
+    /* Navigation */
+    nav li {
+        font-size: 1.5em;
+    }
     li a {
-        display:block;
+        display: block;
         text-align: center;
     }
 
+    /* Boutons et inputs */
     .inputSubmit input,
     .inputSubmit button {
         width: 100%;
-        
     }
 
+    /* Statistiques */
     .stat {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
-
-    .happyUser,
-    .completeProject {
+    .stat h4, .stat p {
+        text-align: center;
+    }
+    .happyUser, .completeProject {
+        width: 50%;
         margin-bottom: 20px;
     }
 
+    /* RGPD */
     .rgpd {
         flex-direction: column;
     }
-
-    .charte1,
-    .charte2,
-    .charte3 {
+    .charte1, .charte2, .charte3 {
         padding: 5px 0;
         border-right: none;
     }
-    .teamContent{
+
+    /* Équipe */
+    .teamContent {
         text-align: center;
         align-items: center;
+        justify-content: center;
     }
-    p.txtPricing{
-    width:90%;
+    .team {
+        width: 100%;
+    }
+    .team h2 {
+        padding-bottom: 1em;
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .team p {
+        font-size: 0.8em;
     }
 
-    .artPricing1{
-    width: 100%;
-    }
-
-    li a {
-        display:block;
-        justify-items: center;
-    }
-    .teamContent{
-    text-align: center;
-    justify-content: center;
-}
-
-
-    .divBlog{
+    /* Blog */
+    .divBlog, .divBlog figure, #blog {
         width: 100%;
         text-align: center;
-
     }
-    .divBlog, figure{
-        width: 100%;
-    }
-    #blog{
-        width: 100%;
-    }
-
-    footer{
-        display: inline-block;
-        width: 100%;
-    }
-
-    .imgCreativity{
-        width: 100%;
-    }
-
-    .imgCreativity img{
-        width: 100%;
-    }
-
-    .artPricing1{
-    width: 100%;
-    }
-
-    .team{
-        width: 100%;
-    }
-
-    .team h2, .team p {
-        padding: 0%;
-        
-    }
-
-    .divBlog figure img{
+    .divBlog figure img {
         width: 300px;
     }
 
-    .cards-container{
+    /* Footer */
+    footer {
+        display: inline-block;
         width: 100%;
-    }
-
-    footer{
         height: 20vh;
     }
-    .pricing1 .artPricing1{
+
+    /* Pricing */
+    .artPricing1, .pricing1 {
         width: 100%;
-        display: block;
-        align-items: center;
-        justify-content: center;
         text-align: center;
-        flex-direction: column;
-    }
-
-    .pricing1{
-        display: block;
-    }
-
-
-    .stat{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        flex-direction: row;
-    }
-    .stat h4, .stat p{
-        text-align: center;
     }
 
-    .happyUser{
-        width: 50%;
-        margin: 0;
+    /* Product Features */
+    .figProductFeatures {
+        width: 80%;
     }
-    .completeProject{
-    width: 50%;
-}
-
-    .artBlog a{
-        width: 100%;
-        justify-content: center;
+    .productFeatures {
         text-align: center;
-        margin: 0px;
+    }
+    .productFeatures p {
+        width: 60%;
+        padding-top: 1em;
     }
 
+    /* Page d'accueil */
+    .accueil h1 {
+        padding-bottom: 2em;
+        font-size: 2.5em;
+    }
+    .accueil p {
+        font-size: 1em;
+        padding-bottom: 2em;
+    }
+
+    /* Réseaux sociaux */
+    .reseaux span {
+        display: block;
+    }
+
+    /* Parallax Description */
     .descriptionParallax p {
         font-size: 0.8em;
         width: 85%;
     }
 
-    .team h2{
-        padding-bottom: 1em;
-        text-align:center ;
-        font-size:1.4em;
-    }
-    .team p{
-        font-size: 0.8em;
-    }
-
-    .figProductFeatures{
-        width: 80%;
-    }
-
-    .productFeatures p{
-        width: 60%;
-        padding-top: 1em;
-    }
-
-    .accueil h1{
-        padding-bottom: 2em;
-        font-size: 2.5em;
-    }
-    .accueil p{
-        font-size: 1em;
-        padding-bottom: 2em;
-    }
-
-    nav li{
-        font-size: 1.5em;
-    }
-    .reseaux span{
-        display: block;
-        
-    }
-    .overInt h5{
-        font-size: 0.8em;
-    }
-    .overInt p{
-        font-size: 0.5em;
-    }
-    .overInt {
-        padding-left: 0px;
-        padding-bottom: 5px;
-    }
-    .firstArticle{
-        padding: 0px;
-    }
-    #scrollTopBtn{
+    /* Divers */
+    #scrollTopBtn {
         width: 35px;
         height: 35px;
+    }
+    .firstArticle {
+        padding: 0px;
+    }
+    .overInt {
+        padding-left: 0;
+        padding-bottom: 5px;
+    }
+    .overInt h5 {
+        font-size: 0.8em;
+    }
+    .overInt p {
+        font-size: 0.5em;
     }
 }
